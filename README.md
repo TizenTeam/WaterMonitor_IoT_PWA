@@ -33,4 +33,5 @@ The detector is connected to the Raspberry Pi Zero W. To get this Pi up and runn
     /> sudo apt-get install python-bluez
     /> sudo apt-get install bluez
     /> sudo  apt-get install bluetooth
+    /> sudo pip install arrow
 
