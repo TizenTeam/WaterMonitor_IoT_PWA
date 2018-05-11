@@ -12,42 +12,44 @@ socket.on('connect', function() {
 
 socket.on('my update', function(data) {
 
-  console.log('UPDATE FROM SERVER YAY!');
+  console.log('UPDATE FROM SERVER YAY!', data);
 
   if (data['water-level']) {
     // TODO we can refactor this to reduce duplication later
     switch (data['water-level']) {
-      case 0:
+      case '0':
         visualEl.classList.add('empty');
         break;
-      case 1:
+      case '1':
         visualEl.classList.remove('empty');
         level1El.classList.add('show');
         level2El.classList.remove('show');
         level3El.classList.remove('show');
         level4El.classList.remove('show');
         break;
-      case 2:
+      case '2':
         visualEl.classList.remove('empty');
         level1El.classList.add('show');
         level2El.classList.add('show');
         level3El.classList.remove('show');
         level4El.classList.remove('show');
         break;
-      case 3:
+      case '3':
         visualEl.classList.remove('empty');
         level1El.classList.add('show');
         level2El.classList.add('show');
         level3El.classList.add('show');
         level4El.classList.remove('show');
         break;
-      case 4:
+      case '4':
         visualEl.classList.remove('empty');
         level1El.classList.add('show');
         level2El.classList.add('show');
         level3El.classList.add('show');
         level4El.classList.add('show');
         break;
+      default:
+        console.log('Water level not recognised', data['water-level']);
     }
   }
 });
