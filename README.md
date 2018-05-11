@@ -15,6 +15,12 @@ The idea is to:
 * store, compare and analyse over time.
 * make a device that can record this, but has to be cheap, easy to use and setup and low power so that it can run on solar power.
 
-## Code
+## Raspberry Pi Setup
+The detector is connected to the Raspberry Pi Zero W. To get this Pi up and running you need to install the following software:
 
-WIP
+    sudo apt update
+    sudo apt install python3-gpiozero
+    sudo apt-get install python-bluez
+    sudo apt-get install bluez
+    sudo  apt-get install bluetooth
+
