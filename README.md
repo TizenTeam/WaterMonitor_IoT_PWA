@@ -20,7 +20,7 @@ The idea is to:
 ### Hardware Used
 The hardware used for this sensor:
 * Raspberry Pi Zero W
-* Float switch
+* Float switch (https://www.cynergy3.com/blog/category/float-switches)
 
 ### Software Setup
 The detector is connected to the Raspberry Pi Zero W. To get this Pi up and running you need to install the following software:
