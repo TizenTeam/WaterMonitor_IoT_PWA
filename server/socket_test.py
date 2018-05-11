@@ -69,6 +69,7 @@ def water_low():
     print("UTC time  - Water lever changed LOW - at: {}".format(utc))
     print("Local time - Water level changed LOW - at: {}".format(utc_local))
 
+    socketio.emit('my update', {'water-level': '0'})
 
     with open(log_file, 'a') as f:
         json.dump(water_log, f, ensure_ascii=False)
