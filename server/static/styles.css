@@ -1,0 +1,35 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #93cbe2;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#visual {
+  width: 200px;
+  height: 400px;
+  margin: 3em auto 0 auto;
+  border-radius: 5px;
+  border-left: 3px solid #333;
+  border-right: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+#visual.empty {
+  border-color: #d53207;
+}
+
+#visual div {
+  border-top: 1px dashed #aaa;
+  width: 200px;
+  height: 100px;
+}
+
+#visual #visual-1,
+#visual #visual-2 {
+  background-color: #026b96;
+}
