@@ -19,6 +19,10 @@ socket.on('my update', function(data) {
     switch (data['water-level']) {
       case '0':
         visualEl.classList.add('empty');
+        level1El.classList.remove('show');
+        level2El.classList.remove('show');
+        level3El.classList.remove('show');
+        level4El.classList.remove('show');
         break;
       case '1':
         visualEl.classList.remove('empty');
