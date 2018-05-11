@@ -16,11 +16,21 @@ The idea is to:
 * make a device that can record this, but has to be cheap, easy to use and setup and low power so that it can run on solar power.
 
 ## Raspberry Pi Setup
+
+### Hardware Used
+The hardware used for this sensor:
+* Raspberry Pi Zero W
+* Float switch
+
+### Software Setup
 The detector is connected to the Raspberry Pi Zero W. To get this Pi up and running you need to install the following software:
 
-    sudo apt update
-    sudo apt install python3-gpiozero
-    sudo apt-get install python-bluez
-    sudo apt-get install bluez
-    sudo  apt-get install bluetooth
+* Use Raspberry Pi Debian Stretch 2018/4/18 OS. (https://www.raspberrypi.org/downloads/raspbian/)
+* Update the basic machine with the following packages
+
+    /> sudo apt update
+    /> sudo apt install python3-gpiozero
+    /> sudo apt-get install python-bluez
+    /> sudo apt-get install bluez
+    /> sudo  apt-get install bluetooth
 
