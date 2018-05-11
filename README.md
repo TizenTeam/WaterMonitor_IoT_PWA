@@ -35,4 +35,5 @@ The detector is connected to the Raspberry Pi Zero W. To get this Pi up and runn
     `/> sudo  apt-get install bluetooth`
     `/> sudo pip install arrow`
     `/> pip install flask'
+    '/> pip install flask_socketio'
 
