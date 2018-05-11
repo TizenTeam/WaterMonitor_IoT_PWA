@@ -2,6 +2,7 @@ from gpiozero import Button
 from signal import pause
 import arrow
 
+# A function to run when a HIGH event is triggered
 def water_high():
     print("Water High!")
     utc = arrow.utcnow()
@@ -10,7 +11,7 @@ def water_high():
     print("Local time - Water level changed HIGH - at: {}".format(utc_local))
 
 
-
+# A function to run when a LOW event is triggered
 def water_low():
     print("Water Low!")
     utc = arrow.utcnow()
