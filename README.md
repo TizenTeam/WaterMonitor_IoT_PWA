@@ -28,10 +28,12 @@ The detector is connected to the Raspberry Pi Zero W. To get this Pi up and runn
 * Use Raspberry Pi Debian Stretch 2018/4/18 OS. (https://www.raspberrypi.org/downloads/raspbian/)
 * Update the basic machine with the following packages
 
-    /> sudo apt update
-    /> sudo apt install python3-gpiozero
-    /> sudo apt-get install python-bluez
-    /> sudo apt-get install bluez
-    /> sudo  apt-get install bluetooth
-    /> sudo pip install arrow
+    `/> sudo apt update`
+    `/> sudo apt install python3-gpiozero`
+    `/> sudo apt-get install python-bluez`
+    `/> sudo apt-get install bluez`
+    `/> sudo  apt-get install bluetooth`
+    `/> sudo pip install arrow`
+    `/> pip install flask'
+    '/> pip install flask_socketio'
 
