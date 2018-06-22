@@ -1,5 +1,5 @@
 # WaterMonitor_IoT_PWA
-Water Monitor using PWA and the IoT. This project is inteded to provide a cheap simple IoT device using commodity components to monitor water levels in wells.
+Water Monitor using PWA and the IoT. This project is intended to provide a cheap simple IoT device using commodity components to monitor water levels in wells.
  
 ## Whats The Problem
 In parts of Africa small villages walk many miles to local water wells. There is no way for that person to know:
@@ -7,7 +7,7 @@ In parts of Africa small villages walk many miles to local water wells. There is
 * Water level
 * Quality of the water
 
-From a local coummunity, local area, country or global view there is no data from those wells. 
+From a local community, local area, country or global view there is no data from those wells. 
 
 ## The Proposal
 The idea is to:
@@ -26,14 +26,9 @@ The hardware used for this sensor:
 The detector is connected to the Raspberry Pi Zero W. To get this Pi up and running you need to install the following software:
 
 * Use Raspberry Pi Debian Stretch 2018/4/18 OS. (https://www.raspberrypi.org/downloads/raspbian/)
-* Update the basic machine with the following packages
-
-    `/> sudo apt update`
-    `/> sudo apt install python3-gpiozero`
-    `/> sudo apt-get install python-bluez`
-    `/> sudo apt-get install bluez`
-    `/> sudo  apt-get install bluetooth`
-    `/> sudo pip install arrow`
-    `/> pip install flask'
-    '/> pip install flask_socketio'
-
+* Update the basic machine with the following packages:
+  ```
+  sudo apt update
+  sudo apt install python3-pip python3-gpiozero python-bluez bluez bluetooth 
+  python3 -m pip install arrow flask_socketio
+  ```
